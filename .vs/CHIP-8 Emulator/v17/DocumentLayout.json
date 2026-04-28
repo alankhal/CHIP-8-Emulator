@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\alank\\OneDrive\\Documents\\PRACTICE\\C\u002B\u002B Project\\CHIP-8 Emulator\\CHIP-8 Emulator\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E3B5E6B4-5971-4A1A-9F8A-0FEF9A03E71E}|CHIP-8 Emulator\\CHIP-8 Emulator.vcxproj|C:\\Users\\alank\\OneDrive\\Documents\\PRACTICE\\C\u002B\u002B Project\\CHIP-8 Emulator\\CHIP-8 Emulator\\CHIP-8 Emulator\\Chip8.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E3B5E6B4-5971-4A1A-9F8A-0FEF9A03E71E}|CHIP-8 Emulator\\CHIP-8 Emulator.vcxproj|solutionrelative:CHIP-8 Emulator\\Chip8.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E3B5E6B4-5971-4A1A-9F8A-0FEF9A03E71E}|CHIP-8 Emulator\\CHIP-8 Emulator.vcxproj|C:\\Users\\alank\\OneDrive\\Documents\\PRACTICE\\C\u002B\u002B Project\\CHIP-8 Emulator\\CHIP-8 Emulator\\CHIP-8 Emulator\\Platform.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E3B5E6B4-5971-4A1A-9F8A-0FEF9A03E71E}|CHIP-8 Emulator\\CHIP-8 Emulator.vcxproj|solutionrelative:CHIP-8 Emulator\\Platform.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -13,14 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{E3B5E6B4-5971-4A1A-9F8A-0FEF9A03E71E}|CHIP-8 Emulator\\CHIP-8 Emulator.vcxproj|C:\\Users\\alank\\OneDrive\\Documents\\PRACTICE\\C\u002B\u002B Project\\CHIP-8 Emulator\\CHIP-8 Emulator\\CHIP-8 Emulator\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{E3B5E6B4-5971-4A1A-9F8A-0FEF9A03E71E}|CHIP-8 Emulator\\CHIP-8 Emulator.vcxproj|solutionrelative:CHIP-8 Emulator\\Main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3B5E6B4-5971-4A1A-9F8A-0FEF9A03E71E}|CHIP-8 Emulator\\CHIP-8 Emulator.vcxproj|C:\\Users\\alank\\OneDrive\\Documents\\PRACTICE\\C\u002B\u002B Project\\CHIP-8 Emulator\\CHIP-8 Emulator\\CHIP-8 Emulator\\Chip8.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E3B5E6B4-5971-4A1A-9F8A-0FEF9A03E71E}|CHIP-8 Emulator\\CHIP-8 Emulator.vcxproj|solutionrelative:CHIP-8 Emulator\\Chip8.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E3B5E6B4-5971-4A1A-9F8A-0FEF9A03E71E}|CHIP-8 Emulator\\CHIP-8 Emulator.vcxproj|C:\\Users\\alank\\OneDrive\\Documents\\PRACTICE\\C\u002B\u002B Project\\CHIP-8 Emulator\\CHIP-8 Emulator\\CHIP-8 Emulator\\Chip8.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E3B5E6B4-5971-4A1A-9F8A-0FEF9A03E71E}|CHIP-8 Emulator\\CHIP-8 Emulator.vcxproj|solutionrelative:CHIP-8 Emulator\\Chip8.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,21 +26,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Chip8.cpp",
-              "DocumentMoniker": "C:\\Users\\alank\\OneDrive\\Documents\\PRACTICE\\C\u002B\u002B Project\\CHIP-8 Emulator\\CHIP-8 Emulator\\CHIP-8 Emulator\\Chip8.cpp",
-              "RelativeDocumentMoniker": "CHIP-8 Emulator\\Chip8.cpp",
-              "ToolTip": "C:\\Users\\alank\\OneDrive\\Documents\\PRACTICE\\C\u002B\u002B Project\\CHIP-8 Emulator\\CHIP-8 Emulator\\CHIP-8 Emulator\\Chip8.cpp",
-              "RelativeToolTip": "CHIP-8 Emulator\\Chip8.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2026-04-27T17:12:31.38Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -56,53 +39,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Chip8.hpp",
-              "DocumentMoniker": "C:\\Users\\alank\\OneDrive\\Documents\\PRACTICE\\C\u002B\u002B Project\\CHIP-8 Emulator\\CHIP-8 Emulator\\CHIP-8 Emulator\\Chip8.hpp",
-              "RelativeDocumentMoniker": "CHIP-8 Emulator\\Chip8.hpp",
-              "ToolTip": "C:\\Users\\alank\\OneDrive\\Documents\\PRACTICE\\C\u002B\u002B Project\\CHIP-8 Emulator\\CHIP-8 Emulator\\CHIP-8 Emulator\\Chip8.hpp",
-              "RelativeToolTip": "CHIP-8 Emulator\\Chip8.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2026-04-23T01:31:51.4Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "Main.cpp",
               "DocumentMoniker": "C:\\Users\\alank\\OneDrive\\Documents\\PRACTICE\\C\u002B\u002B Project\\CHIP-8 Emulator\\CHIP-8 Emulator\\CHIP-8 Emulator\\Main.cpp",
               "RelativeDocumentMoniker": "CHIP-8 Emulator\\Main.cpp",
               "ToolTip": "C:\\Users\\alank\\OneDrive\\Documents\\PRACTICE\\C\u002B\u002B Project\\CHIP-8 Emulator\\CHIP-8 Emulator\\CHIP-8 Emulator\\Main.cpp",
               "RelativeToolTip": "CHIP-8 Emulator\\Main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAZAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAuwC8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-04-27T22:25:48.963Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Platform.cpp",
               "DocumentMoniker": "C:\\Users\\alank\\OneDrive\\Documents\\PRACTICE\\C\u002B\u002B Project\\CHIP-8 Emulator\\CHIP-8 Emulator\\CHIP-8 Emulator\\Platform.cpp",
               "RelativeDocumentMoniker": "CHIP-8 Emulator\\Platform.cpp",
               "ToolTip": "C:\\Users\\alank\\OneDrive\\Documents\\PRACTICE\\C\u002B\u002B Project\\CHIP-8 Emulator\\CHIP-8 Emulator\\CHIP-8 Emulator\\Platform.cpp",
               "RelativeToolTip": "CHIP-8 Emulator\\Platform.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAABQAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2026-04-27T22:25:37.988Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Platform.hpp",
               "DocumentMoniker": "C:\\Users\\alank\\OneDrive\\Documents\\PRACTICE\\C\u002B\u002B Project\\CHIP-8 Emulator\\CHIP-8 Emulator\\CHIP-8 Emulator\\Platform.hpp",
               "RelativeDocumentMoniker": "CHIP-8 Emulator\\Platform.hpp",
               "ToolTip": "C:\\Users\\alank\\OneDrive\\Documents\\PRACTICE\\C\u002B\u002B Project\\CHIP-8 Emulator\\CHIP-8 Emulator\\CHIP-8 Emulator\\Platform.hpp",
               "RelativeToolTip": "CHIP-8 Emulator\\Platform.hpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2026-04-27T22:25:15.665Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Chip8.cpp",
+              "DocumentMoniker": "C:\\Users\\alank\\OneDrive\\Documents\\PRACTICE\\C\u002B\u002B Project\\CHIP-8 Emulator\\CHIP-8 Emulator\\CHIP-8 Emulator\\Chip8.cpp",
+              "RelativeDocumentMoniker": "CHIP-8 Emulator\\Chip8.cpp",
+              "ToolTip": "C:\\Users\\alank\\OneDrive\\Documents\\PRACTICE\\C\u002B\u002B Project\\CHIP-8 Emulator\\CHIP-8 Emulator\\CHIP-8 Emulator\\Chip8.cpp",
+              "RelativeToolTip": "CHIP-8 Emulator\\Chip8.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-04-27T17:12:31.38Z",
               "EditorCaption": ""
             }
           ]
