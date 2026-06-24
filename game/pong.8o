@@ -1,0 +1,172 @@
+# =====================================================================
+#  PONG  -  a game written in CHIP-8 assembly for my own emulator.
+#
+#  Build it with Octo:   https://johnearnest.github.io/Octo/
+#  Source -> ROM:        octo-cli pong.8o pong.ch8
+#
+#  Controls (left paddle is you, right paddle is the computer):
+#      W  -> move up      (CHIP-8 key 5)
+#      S  -> move down    (CHIP-8 key 8)
+#
+#  Design notes
+#  ------------
+#  * Every sprite is only 1-2 pixels wide and is kept away from the
+#    right / bottom screen edges, so the ROM does not depend on how an
+#    interpreter clips sprites that run off the screen.
+#  * The ball and paddles always move in 1-pixel steps, so position
+#    registers always land exactly on the bounce / reset boundaries and
+#    can never underflow past them.
+#  * Only basic CHIP-8 opcodes are used (no shift / load-store quirks),
+#    so behaviour is identical across interpreters.
+# =====================================================================
+
+:alias py   v3     # player paddle: Y of the top pixel
+:alias ay   v4     # ai paddle:     Y of the top pixel
+:alias bx   v5     # ball X
+:alias by   v6     # ball Y
+:alias bdx  v7     # ball X velocity   (1 = right, 0xFF = left)
+:alias bdy  v8     # ball Y velocity   (1 = down , 0xFF = up)
+:alias tmp  v9     # scratch
+# v0 v1 v2 are general scratch / sprite coordinates.
+# ve is reserved by Octo for the < > <= >= comparison macros.
+
+:const PLAYER_X  2     # column of the player's paddle
+:const AI_X     61     # column of the computer's paddle
+:const TOP       0     # highest ball Y
+:const BOTTOM   30     # lowest ball Y  (ball is 2 px tall)
+:const PAD_MAX  26     # lowest paddle top Y (paddle is 6 px tall)
+
+# --- sprite data ------------------------------------------------------
+: paddle 0x80 0x80 0x80 0x80 0x80 0x80   # 1 px wide, 6 px tall
+: ball   0xC0 0xC0                        # 2 px wide, 2 px tall
+
+# ---------------------------------------------------------------------
+#  Put the ball back in the centre and serve it in a random direction.
+# ---------------------------------------------------------------------
+: reset-ball
+  bx := 30
+  by := 15
+  bdy := 1
+  v0 := random 1            # 0 or 1
+  if v0 == 0 then bdx := 1
+  if v0 != 0 then bdx := 0xFF
+;
+
+# ---------------------------------------------------------------------
+#  Slow the action down by leaning on the delay timer. Tune the speed
+#  here, or by changing the emulator's <Delay> argument.
+# ---------------------------------------------------------------------
+: frame-wait
+  v0 := 2
+  delay := v0
+  loop
+    v0 := delay
+    while v0 != 0
+  again
+;
+
+# ---------------------------------------------------------------------
+#  Did the ball hit the player's paddle? If so, bounce it back right.
+#  Overlap test: the ball (rows by..by+1) touches the paddle
+#  (rows py..py+5) unless it is entirely above or entirely below it.
+# ---------------------------------------------------------------------
+: hit-player
+  tmp := by
+  tmp += 1
+  if tmp < py then return         # ball is entirely above the paddle
+  tmp := py
+  tmp += 5
+  if by > tmp then return         # ball is entirely below the paddle
+  bdx := 1                        # reflect to the right
+;
+
+: hit-ai
+  tmp := by
+  tmp += 1
+  if tmp < ay then return
+  tmp := ay
+  tmp += 5
+  if by > tmp then return
+  bdx := 0xFF                     # reflect to the left
+;
+
+# ---------------------------------------------------------------------
+#  XOR every sprite at its current position. Called twice per frame:
+#  once to erase, once to redraw after moving.
+# ---------------------------------------------------------------------
+: draw-all
+  v0 := PLAYER_X
+  v1 := py
+  i  := paddle
+  sprite v0 v1 6
+  v0 := AI_X
+  v1 := ay
+  i  := paddle
+  sprite v0 v1 6
+  i  := ball
+  sprite bx by 2
+;
+
+# ---------------------------------------------------------------------
+#  Read the keypad and move the player's paddle within bounds.
+# ---------------------------------------------------------------------
+: move-player
+  v0 := 5
+  if v0 key begin
+    if py != TOP then py += -1
+  end
+  v0 := 8
+  if v0 key begin
+    if py != PAD_MAX then py += 1
+  end
+;
+
+# ---------------------------------------------------------------------
+#  Simple AI: chase the ball, but only while it is heading this way,
+#  which gives the player a fighting chance.
+# ---------------------------------------------------------------------
+: move-ai
+  if bdx != 1 then return
+  if ay < by begin
+    if ay != PAD_MAX then ay += 1
+  end
+  if ay > by begin
+    if ay != TOP then ay += -1
+  end
+;
+
+# ---------------------------------------------------------------------
+#  Advance the ball, bounce it off walls and paddles, and reset it if
+#  it sails past a paddle.
+# ---------------------------------------------------------------------
+: move-ball
+  bx += bdx
+  by += bdy
+
+  if by == TOP    then bdy := 1
+  if by == BOTTOM then bdy := 0xFF
+
+  if bx == 3  then hit-player
+  if bx == 59 then hit-ai
+
+  if bx == 0  then reset-ball
+  if bx == 62 then reset-ball
+;
+
+# ---------------------------------------------------------------------
+#  Entry point.
+# ---------------------------------------------------------------------
+: main
+  py := 13
+  ay := 13
+  reset-ball
+
+  draw-all                  # draw the opening scene once
+  loop
+    frame-wait
+    draw-all                # erase
+    move-player
+    move-ai
+    move-ball
+    draw-all                # redraw at the new positions
+  again
