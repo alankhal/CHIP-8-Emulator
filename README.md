@@ -123,7 +123,3 @@ These are the things I'd tackle next — they're also the most interesting remai
 - Austin Morlan's CHIP-8 emulator write-up, which the architecture here is based on.
 - Cowgod's CHIP-8 Technical Reference and Matthew Mikolay's _Mastering CHIP-8_ for the instruction set.
 - John Earnest's [Octo](https://github.com/JohnEarnest/Octo) for assembling the game.
-
-## License
-
-MIT
