@@ -1,10 +1,11 @@
+<img width="1278" height="866" alt="go-chip8-flickering" src="https://github.com/user-attachments/assets/cb7af65b-2e6c-4741-b2d6-795182ed9ba4" />
 # CHIP-8 Emulator
 
 A cycle-driven CHIP-8 interpreter written in modern C++ with an SDL2 front end, plus **Pong**, a game I wrote from scratch in CHIP-8 assembly to prove the emulator works end to end.
 
 CHIP-8 is a tiny virtual machine from the mid-1970s — 4&nbsp;KB of memory, 16 registers, a 64×32 monochrome display, and 35 opcodes — designed to make it easy to write small games on early microcomputers. I built this to learn, from the ground up, how a real machine fetches, decodes, and executes instructions.
 
-> _Add a screenshot or GIF of Pong here once you've captured one — `docs/pong.gif` is a good spot._
+<img width="1278" height="866" alt="go-chip8-flickering" src="https://github.com/user-attachments/assets/cb7af65b-2e6c-4741-b2d6-795182ed9ba4" />
 
 ## Project structure
 
