@@ -1,4 +1,3 @@
-<img width="1278" height="866" alt="go-chip8-flickering" src="https://github.com/user-attachments/assets/cb7af65b-2e6c-4741-b2d6-795182ed9ba4" />
 # CHIP-8 Emulator
 
 A cycle-driven CHIP-8 interpreter written in modern C++ with an SDL2 front end, plus **Pong**, a game I wrote from scratch in CHIP-8 assembly to prove the emulator works end to end.
